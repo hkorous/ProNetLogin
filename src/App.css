@@ -37,23 +37,20 @@
   }
 }
 
-.svg-background:after {
-  content: "";
-  position: fixed;
-  top: 0;
-  left: 0;
-  height: 100vh;
-  width: 100%;
-  background: url(../public/wave-haikei.svg);
-  background-size: 100%;
-  z-index: -1;
+.svg-background {
+  background-image: url(../public/wave.png);
+  background-repeat: no-repeat;
+  background-color: #EDF0F4;
+  background-size: contain;
+}
+.banner-text {
+  color: white
 }
 
 .card {
   text-align: center;
-  background-color: #b0e0e3;
-  border-width: 10px;
-  border-color: white;
+  background-image: url(../public/transparentbg.png);
+  background-color: transparent;
   border-radius: 2.0rem;
  }
 
@@ -76,11 +73,64 @@ h6 {
   padding-bottom: 25px;
 }
 
-.login-button{
+.text-primary {
+  color: #0070bb !important;
+}
+.bg-primary {
+  background-color: #0070bb !important;
+}
+
+.text-secondary {
+  color:#99c973 !important;
+}
+
+#login-icon {
+ color: white;
+}
+
+#password-icon {
+  color: white;
+}
+
+#login-button {
   width: 50%;
   border-radius: 10px;
   background-color: #99c973;
   padding: 6px;
   font-weight: 600;
   border: 2px solid white
+}
+
+#SSO-button {
+  width: 50%;
+  border-radius: 10px;
+  background-color: #99c973;
+  padding: 6px;
+  font-weight: 600;
+  border: 2px solid white
+}
+
+.join-button {
+  bottom: 1rem;
+  right: -10rem;
+  z-index: 3;
+}
+.login-card {
+  z-index: 2;
+}
+
+.min-vh-15 {
+  min-height: 15vh;
+}
+.min-vh-25 {
+  min-height: 25vh;
+}
+.min-vh-33 {
+  min-height: 33vh;
+}
+.min-vh-75 {
+  min-height: 75vh;
+}
+.min-vh-85 {
+  min-height: 85vh;
 }
